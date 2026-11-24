@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://s72lgdrrjaec"]
+
+[ext_resource type="Texture2D" uid="uid://dvxg5p6bcxbv3" path="res://sprites/overzichtAchtergrond.png" id="1_glv2v"]
+
+[node name="Main" type="Node2D" unique_id=1431247880]
+position = Vector2(-2, -1)
+
+[node name="OverzichtAchtergrond" type="Sprite2D" parent="." unique_id=469118960]
+texture_filter = 1
+position = Vector2(542, 451)
+scale = Vector2(9, 9)
+texture = ExtResource("1_glv2v")
