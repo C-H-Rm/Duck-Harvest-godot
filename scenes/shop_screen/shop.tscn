@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dsojcgad8me5g"]
+
+[ext_resource type="Script" uid="uid://jtesn7axpevv" path="res://scenes/shop_screen/shop.gd" id="1_vtci8"]
+
+[node name="Shop" type="Control" unique_id=915697974]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vtci8")
+
+[node name="BackgroundColorRect" type="ColorRect" parent="." unique_id=891903086]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7882353, 0.7882353, 0.7882353, 1)

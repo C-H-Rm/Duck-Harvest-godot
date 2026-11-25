@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dsuyk1hpegtfh" path="res://sprites/hokOntgrendeld.png" id="2_2w2wy"]
 [ext_resource type="Texture2D" uid="uid://bkj7g3f522i7t" path="res://sprites/hokje_achtergrond.tres" id="3_2w2wy"]
 [ext_resource type="Texture2D" uid="uid://bj0lwoq0vwwa6" path="res://sprites/hokVergrendeld.png" id="4_b02ay"]
+[ext_resource type="SpriteFrames" uid="uid://gdcepnog330g" path="res://sprites/animaties/confetti.tres" id="5_xvibo"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b02ay"]
 
@@ -64,6 +65,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_b02ay")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AspectRatioContainer/Foreground" unique_id=14700716]
+visible = false
+position = Vector2(449.99997, 449.99997)
+scale = Vector2(49.999996, 50)
+sprite_frames = ExtResource("5_xvibo")
+frame = 9
+frame_progress = 1.0
 
 [node name="Button" type="Button" parent="AspectRatioContainer" unique_id=2068507844]
 layout_mode = 2

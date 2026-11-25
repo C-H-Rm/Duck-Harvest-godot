@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://c3psw8tfacycu"]
 
+[ext_resource type="Script" uid="uid://cldqm21htnt7t" path="res://scenes/overview_screen/overview.gd" id="1_kie4r"]
 [ext_resource type="StyleBox" uid="uid://rq3h3rwldtm8" path="res://themes/black_border_panel.tres" id="2_ookwh"]
 [ext_resource type="Script" uid="uid://bmr2d65n360pd" path="res://scenes/overview_screen/cage_grid_container.gd" id="3_tpopy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qd24f"]
+load_path = "res://.godot/imported/openDeDeurNietDenji.png-dd5b4c027c52f2d2c7845e1e0f01a34b.ctex"
 
 [node name="Overview" type="Control" unique_id=1407821958]
 layout_mode = 3
@@ -10,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_kie4r")
 
 [node name="BackgroundColorRect" type="ColorRect" parent="." unique_id=1338543659]
 layout_mode = 1
@@ -19,6 +24,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.7882353, 0.7882353, 0.7882353, 1)
+
+[node name="Button" type="Button" parent="BackgroundColorRect" unique_id=558185810]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -155.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 0
+grow_vertical = 0
+icon = SubResource("CompressedTexture2D_qd24f")
+flat = true
+icon_alignment = 2
+vertical_icon_alignment = 2
+expand_icon = true
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=854219184]
 layout_mode = 1
@@ -51,3 +75,5 @@ theme_override_constants/h_separation = 32
 theme_override_constants/v_separation = 32
 columns = 5
 script = ExtResource("3_tpopy")
+
+[connection signal="pressed" from="BackgroundColorRect/Button" to="." method="_on_button_pressed"]
