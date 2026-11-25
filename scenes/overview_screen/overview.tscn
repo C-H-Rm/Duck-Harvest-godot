@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://c3psw8tfacycu"]
+
+[ext_resource type="StyleBox" uid="uid://rq3h3rwldtm8" path="res://themes/black_border_panel.tres" id="2_ookwh"]
+[ext_resource type="Script" uid="uid://bmr2d65n360pd" path="res://scenes/overview_screen/cage_grid_container.gd" id="3_tpopy"]
+
+[node name="Overview" type="Control" unique_id=1407821958]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundColorRect" type="ColorRect" parent="." unique_id=1338543659]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7882353, 0.7882353, 0.7882353, 1)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=854219184]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 1.2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AspectRatioContainer" unique_id=1641310125]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="PanelContainer" type="PanelContainer" parent="AspectRatioContainer/VBoxContainer" unique_id=1782645754]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = ExtResource("2_ookwh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer/VBoxContainer/PanelContainer" unique_id=349184209]
+layout_mode = 2
+
+[node name="CageGridContainer" type="GridContainer" parent="AspectRatioContainer/VBoxContainer" unique_id=625274629]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 5
+script = ExtResource("3_tpopy")

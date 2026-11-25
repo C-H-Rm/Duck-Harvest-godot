@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://bjsaamiuvbbjq"]
+
+[ext_resource type="Script" uid="uid://bo3l62vqhg3tx" path="res://scenes/overview_screen/overview_cage_ui/cage_ui.gd" id="1_b02ay"]
+[ext_resource type="Texture2D" uid="uid://dsuyk1hpegtfh" path="res://sprites/hokOntgrendeld.png" id="2_2w2wy"]
+[ext_resource type="Texture2D" uid="uid://bkj7g3f522i7t" path="res://sprites/hokje_achtergrond.tres" id="3_2w2wy"]
+[ext_resource type="Texture2D" uid="uid://bj0lwoq0vwwa6" path="res://sprites/hokVergrendeld.png" id="4_b02ay"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b02ay"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xvibo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3sihv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ucr5f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r045m"]
+
+[node name="CageUi" type="Control" unique_id=1750076045]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_b02ay")
+locked = false
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=1830971296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="AspectRatioContainer" unique_id=882752729]
+layout_mode = 2
+texture = ExtResource("3_2w2wy")
+
+[node name="BirdsArea" type="Control" parent="AspectRatioContainer" unique_id=478095223]
+layout_mode = 2
+
+[node name="Foreground" type="Control" parent="AspectRatioContainer" unique_id=2062561557]
+layout_mode = 2
+
+[node name="CageUnlockedTexture" type="TextureRect" parent="AspectRatioContainer/Foreground" unique_id=1219852986]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2w2wy")
+
+[node name="CageLockedTexture" type="TextureRect" parent="AspectRatioContainer/Foreground" unique_id=1737669033]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_b02ay")
+
+[node name="Button" type="Button" parent="AspectRatioContainer" unique_id=2068507844]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_b02ay")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_xvibo")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3sihv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ucr5f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r045m")

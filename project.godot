@@ -19,9 +19,9 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=1080
 window/size/viewport_height=900
-window/size/mode=3
-window/size/initial_position=Vector2i(302, 251)
-window/stretch/mode="viewport"
+window/size/mode=2
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 window/stretch/scale_mode="integer"
 mouse_cursor/custom_image="uid://vdq6e1713e2m"
 
