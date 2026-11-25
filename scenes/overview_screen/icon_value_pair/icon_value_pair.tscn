@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ng61w14vrg1h"]
+
+[ext_resource type="Script" uid="uid://d2t5nkb2h61cv" path="res://scenes/overview_screen/icon_value_pair/icon_value_pair.gd" id="1_shg1w"]
+[ext_resource type="Texture2D" uid="uid://6si8vtp8ask4" path="res://sprites/icons/shell.tres" id="2_48nj4"]
+[ext_resource type="FontFile" uid="uid://bxrmy7t2af4di" path="res://fonts/Minecraft.ttf" id="3_v6o20"]
+
+[node name="IconValuePair" type="Control" unique_id=562142253]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_shg1w")
+icon = ExtResource("2_48nj4")
+amount_value = 5
+text_size = 97
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=376292144]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="RichTextLabel" parent="." unique_id=1662131211]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_v6o20")
+theme_override_font_sizes/normal_font_size = 97
+text = "[img=16x16]res://sprites/icons/shell.tres[/img] 3"
+vertical_alignment = 1

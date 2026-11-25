@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://c3psw8tfacycu"]
 
+[ext_resource type="PackedScene" uid="uid://ng61w14vrg1h" path="res://scenes/overview_screen/icon_value_pair/icon_value_pair.tscn" id="2_kie4r"]
 [ext_resource type="StyleBox" uid="uid://rq3h3rwldtm8" path="res://themes/black_border_panel.tres" id="2_ookwh"]
+[ext_resource type="Texture2D" uid="uid://d2an3vcuo5q7n" path="res://sprites/icons/golden_egg.tres" id="3_hwvcm"]
 [ext_resource type="Script" uid="uid://bmr2d65n360pd" path="res://scenes/overview_screen/cage_grid_container.gd" id="3_tpopy"]
+[ext_resource type="Texture2D" uid="uid://dul7gi1yxe7sp" path="res://sprites/icons/egg.tres" id="4_vbs7f"]
 
 [node name="Overview" type="Control" unique_id=1407821958]
 layout_mode = 3
@@ -42,6 +45,26 @@ theme_override_styles/panel = ExtResource("2_ookwh")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="AspectRatioContainer/VBoxContainer/PanelContainer" unique_id=349184209]
 layout_mode = 2
+
+[node name="IconValuePair" parent="AspectRatioContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=562142253 instance=ExtResource("2_kie4r")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("3_hwvcm")
+amount_value = 67
+text_size = 92
+
+[node name="IconValuePair2" parent="AspectRatioContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=951419853 instance=ExtResource("2_kie4r")]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("4_vbs7f")
+amount_value = 69
+text_size = 92
+
+[node name="IconValuePair3" parent="AspectRatioContainer/VBoxContainer/PanelContainer/HBoxContainer" unique_id=1978102931 instance=ExtResource("2_kie4r")]
+layout_mode = 2
+size_flags_horizontal = 3
+amount_value = 41
+text_size = 92
 
 [node name="CageGridContainer" type="GridContainer" parent="AspectRatioContainer/VBoxContainer" unique_id=625274629]
 layout_mode = 2
